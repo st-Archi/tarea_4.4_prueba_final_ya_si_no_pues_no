@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* 🔴 BOTÓN CERRAR SESIÓN */
+
 .logout-btn {
     position: absolute;
     top: 20px;
@@ -35,7 +35,7 @@ body {
     box-shadow: 0 0 10px rgba(165, 42, 42, 0.6);
 }
 
-/* CONTENEDOR LOGIN - CENTRADO */
+
 body:not(:has(.logout-btn)) .container {
     max-width: 450px;
     width: 90%;
@@ -46,7 +46,7 @@ body:not(:has(.logout-btn)) .container {
     text-align: center;
 }
 
-/* CONTENEDOR PRODUCTOS - GRID */
+
 body:has(.logout-btn) {
     display: block;
     padding: 40px 20px;
@@ -61,7 +61,7 @@ body:has(.logout-btn) .container {
     padding: 20px;
 }
 
-/* Contenedor para agregar producto */
+
 .container > div:first-of-type {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
@@ -69,7 +69,7 @@ body:has(.logout-btn) .container {
     border-radius: 15px;
 }
 
-/* Contenedor para lista de productos */
+
 .container > div:last-of-type {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
@@ -80,7 +80,6 @@ body:has(.logout-btn) .container {
     max-height: 600px;
 }
 
-/* TÍTULO */
 h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -133,7 +132,7 @@ button:hover {
     background: #3c6f61;
 }
 
-/* LINK REGISTRATE - VERDE CHIDO */
+
 p {
     margin-top: 20px;
     color: #d0d0d0;
@@ -151,13 +150,12 @@ p a:hover {
     text-decoration: underline;
 }
 
-/* MENSAJE */
+
 #message {
     margin-top: 15px;
     font-size: 14px;
 }
 
-/* LISTA PRODUCTOS CON SCROLL */
 ul {
     list-style: none;
     margin-top: 10px;
@@ -166,7 +164,7 @@ ul {
     padding-right: 10px;
 }
 
-/* Estilo del scrollbar */
+
 ul::-webkit-scrollbar {
     width: 8px;
 }
@@ -196,7 +194,7 @@ li {
     align-items: center;
 }
 
-/* BOTONES EDITAR Y ELIMINAR */
+
 .edit-btn {
     background: #b58900;
     margin-right: 8px;
@@ -239,7 +237,7 @@ li {
     margin-left: 10px;
 }
 
-/* Responsive para pantallas pequeñas */
+
 @media (max-width: 768px) {
     body:has(.logout-btn) .container {
         grid-template-columns: 1fr;

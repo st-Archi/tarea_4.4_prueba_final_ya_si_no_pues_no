@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 
-// Conexión a MongoDB (solo si NO es test)
+
 if (process.env.NODE_ENV !== 'test') {
     mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/gestor-productos', {
         useNewUrlParser: true,
@@ -27,4 +27,4 @@ if (process.env.NODE_ENV !== 'test') {
     app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
 }
 
-module.exports = app; // Exportar app para Jest
+module.exports = app; 
