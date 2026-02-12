@@ -5,7 +5,7 @@ const User = require('../api/models/User');
 
 beforeAll(async () => {
     // Conectarse a MongoDB de prueba
-    await mongoose.connect('mongodb://localhost:27017/gestor-productos-test', {
+    await mongoose.connect('mongodb://localhost:27017/gestor-productos', {
         useNewUrlParser: true,
         useUnifiedTopology: true
     });
